@@ -1,6 +1,6 @@
 #!/bin/sh -eu
 
-cat <<EOS > ~/.local/bin/dcpy
+cat <<'EOF' > ~/.local/bin/dcpy
 #!/bin/sh -eu
 python3 docker-compose.py | docker-compose -f - $@
 EOS
