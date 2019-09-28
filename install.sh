@@ -1,7 +1,8 @@
 #!/bin/sh -eu
 
-cat <<'EOF' > ~/.local/bin/dcpy
+cat <<'EOF' > ~/.local/bin/dcdy
 #!/bin/sh -eu
-python3 docker-compose.py | docker-compose -f - $@
-EOS
-chmod +x ~/.local/bin/dcpy
+./docker-compose.dy | docker-compose -f - $@
+EOF
+
+chmod +x ~/.local/bin/dcdy
