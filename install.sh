@@ -1,8 +1,4 @@
 #!/bin/sh -eu
 
-cat <<'EOF' > ~/.local/bin/dcdy
-#!/bin/sh -eu
-./docker-compose.dy | docker-compose -f - $@
-EOF
-
+curl -sSf https://raw.githubusercontent.com/kgtkr/dcdy/master/dcdy > ~/.local/bin/dcdy
 chmod +x ~/.local/bin/dcdy
